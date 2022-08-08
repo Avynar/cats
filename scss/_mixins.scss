@@ -1,0 +1,30 @@
+$tablet: 1120px;
+$mobile: 680px;
+
+$border-color-inactive: #1698d9;
+$border-color-inactive-hover: #2ea8e6;
+$border-color-active: #d91667;
+$border-color-active-hover: #e62e7a;
+
+
+@mixin background($url) {
+    background: url($url);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin transition($delay, $property) {
+    -webkit-transition: $delay $property;
+    -o-transition: $delay $property;
+    -moz-transition: $delay $property;
+    transition: $delay $property;
+}
